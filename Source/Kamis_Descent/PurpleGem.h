@@ -16,7 +16,6 @@ class KAMIS_DESCENT_API APurpleGem : public AGem
 
 public:
 
-	UFUNCTION(BlueprintImplementableEvent, Category = "Gem")
-	void PurpleCollected();
+	void WasCollected_Implementation() override;
 	
 };
