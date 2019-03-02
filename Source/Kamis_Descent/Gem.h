@@ -37,6 +37,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Gem")
 	void SetActive(bool State);
 
+	// Function to call when a gem is collected
+	UFUNCTION(BlueprintNativeEvent)
+	void WasCollected();
+	
+	virtual void WasCollected_Implementation();
+
 
 protected:
 	// Static mesh to represent the gem in the level
