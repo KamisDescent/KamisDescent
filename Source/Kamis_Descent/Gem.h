@@ -38,10 +38,8 @@ public:
 	void SetActive(bool State);
 
 	// Function to call when a gem is collected
-	UFUNCTION(BlueprintNativeEvent)
-	void WasCollected();
-	
-	virtual void WasCollected_Implementation();
+	UFUNCTION(BlueprintCallable, Category = "Gem")
+	virtual void Collect();
 
 
 protected:

@@ -4,17 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "Gem.h"
-#include "PurpleGem.generated.h"
+#include "RedGem.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class KAMIS_DESCENT_API APurpleGem : public AGem
+class KAMIS_DESCENT_API ARedGem : public AGem
 {
 	GENERATED_BODY()
-
+	
 public:
 	void Collect() override;
-	
+
 };
