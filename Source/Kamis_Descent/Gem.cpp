@@ -43,7 +43,7 @@ void AGem::SetActive(bool State)
 	bIsActive = State;
 }
 
-void AGem::WasCollected_Implementation()
+void AGem::Collect()
 {
-	//
+	SetActive(false);
 }
