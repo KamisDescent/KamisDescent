@@ -7,6 +7,5 @@ void ARedGem::Collect()
 	// Call on base behaviour
 	Super::Collect();
 
-	// Destroy the gem
 	Destroy();
 }
